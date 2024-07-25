@@ -14,7 +14,7 @@ library("scran")
 
 # Read and load data ------------------------------------------------------
 # read raw as SCE
-data.raw <- Read10X("./data/240123_second/cellranger/multi/raw_feature_bc_matrix/")
+data.raw <- Read10X("./data/raw_feature_bc_matrix/")
 # convert to SingleCellExperiment
 sce.raw <- SingleCellExperiment(assays = list(counts = data.raw$`Gene Expression`))
 # add CMO counts to colData
@@ -25,7 +25,7 @@ sce.raw %>% colData() %>% colnames()
 
 # Filter by CMO -----------------------------------------------------------
 # read CMO assignments
-cmo <- read.csv("./data/240123_second/cellranger/multi/multiplexing_analysis/assignment_confidence_table.csv")
+cmo <- read.csv("./data/assignment_confidence_table.csv")
 # change column names
 colnames(cmo) <- gsub(pattern = "CMO", "assign.CMO", x = colnames(cmo))
 # subset with cells with info in CMO assignment file
