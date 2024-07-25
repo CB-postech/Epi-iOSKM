@@ -52,7 +52,7 @@ progenyBreaks <- c(seq(min(progeny.df.sum), 0,
                   seq(max(progeny.df.sum) / paletteLength, 
                       max(progeny.df.sum), 
                       length.out = floor(paletteLength / 2)))
-progeny.hmap <- pheatmap(t(progeny.df.sum[, -1]), fontsize=14, 
+progeny.hmap <- pheatmap(t(progeny.df.sum), fontsize=14, 
                         fontsize_row = 10, scale = "none",
                         color = myColor, breaks = progenyBreaks, 
                         main = "PROGENy (500)", angle_col = 45,
