@@ -14,10 +14,8 @@ library("scran")
 
 
 # Read and load data ------------------------------------------------------
-back.oskm <- read10xCounts(
-  "./data/230616_reporters/per_sample_outs/back_oskm/count/sample_filtered_feature_bc_matrix/")
-back.ctl <- read10xCounts(
-  "./data/230616_reporters/per_sample_outs/back_control/count/sample_filtered_feature_bc_matrix/")
+back.oskm <- read10xCounts("./data/back_oskm/count/sample_filtered_feature_bc_matrix/")
+back.ctl <- read10xCounts("./data/back_control/count/sample_filtered_feature_bc_matrix/")
 
 
 
