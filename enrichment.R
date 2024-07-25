@@ -5,13 +5,14 @@
 
 set.seed(1234)
 # Libraries ---------------------------------------------------------------
+library("gprofiler2")
 library("STRINGdb")
 
 
 
 # Load data ---------------------------------------------------------------
-skin2.ife <- readRDS("./rds/2024/0415/skin2_ife.rds")
-gocc.exs <- fromJSON("./data/geneSet/GOCC_extraCellularSpace/GOCC_EXTRACELLULAR_SPACE.v2023.2.Mm.json")
+skin2.ife <- readRDS("./rds/skin2_ife.rds")
+gocc.exs <- fromJSON("./data/geneSet/GOCC_EXTRACELLULAR_SPACE.v2023.2.Mm.json")
 gocc.exs <- gocc.exs$GOCC_EXTRACELLULAR_SPACE$geneSymbols
 
 
