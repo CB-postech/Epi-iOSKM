@@ -10,7 +10,7 @@ library("progeny")
 
 
 # Load data ----------------------------------------------------------------
-skin2.ife <- readRDS("./rds/2024/0325/skin2_ife-oskm.rds")
+skin2.ife <- readRDS("./rds/skin2_ife.rds")
 
 
 
