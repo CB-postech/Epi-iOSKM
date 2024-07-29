@@ -10,7 +10,7 @@ library("msigdbr")
 
 
 # Load data ---------------------------------------------------------------
-skin2.ife <- readRDS("./rds/2024/0318/skin2_ife.rds")
+skin2.ife <- readRDS("./rds/skin2_ife.rds")
 
 
 
