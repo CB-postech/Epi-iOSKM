@@ -6,7 +6,7 @@
 
 set.seed(1234)
 # Load data ---------------------------------------------------------------
-daniel.ife <- readRDS("./rds/2024/0610/daniel_ife.rds")
+daniel.ife <- readRDS("./rds/daniel_ife.rds")
 
 
 
